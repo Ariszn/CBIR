@@ -6,6 +6,8 @@
 
 你解压之后应该会看到这样的文件夹：
 
+--groundtruth
+
 --extract_cnn_vgg16_keras.py
 
 --index.py
@@ -62,6 +64,11 @@ pip install X
 2.如果你没有训练过数据集，请先按照添加数据集的方式添加至少一个数据集。
 
 3.运行Main.py，输入图片路径和数据集的名称，搜索，程序会返回前三匹配的图像。
-# 有关mAP的计算
 
-1.该系统目前只支持Oxford数据集的mAP计算，具体文件格式参考Oxford的groundtruth文件夹中的示例文件。
+# 如何进行mAP计算？
+
+现在程序提供的mAP计算是基于Oxford数据集。换言之，你在database下必须有Oxford这个数据集，并且保证里面的内容与官方的无差异方可计算成功。当然，如果需要进行其他的mAP计算，你可以修改Cal_mAP.py、CaculateformAP.py、query.py这三个文件达到进行其他mAP计算的效果。由于代码繁琐，这里就不提供教程。如果需要注释的话可以联系维护者。
+
+# 联系维护者
+
+Ari:Ariharasuzune009@gmail.com
